@@ -15,6 +15,6 @@ RUN apt-get update \
  && apt-get install -y docker-ce sudo \
  && rm -rf /var/lib/apt/lists/*
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
-COPY entrypoint.sh /
+#COPY entrypoint.sh /
 ENTRYPOINT /entrypoint.sh
 
